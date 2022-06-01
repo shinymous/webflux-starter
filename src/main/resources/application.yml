@@ -1,0 +1,13 @@
+server:
+  port: ${PORT:8080}
+  compression.enabled: true
+  error.include-message: always
+spring:
+  application.name: ${APPLICATION-NAME:users}
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/client
+#      database: client
+#    username: ${DB-USER:postgres}
+#    password: ${DB-PASSWORD:123}
+#    driverClassName: org.postgresql.Driver
